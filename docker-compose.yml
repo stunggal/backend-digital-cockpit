@@ -15,11 +15,11 @@ services:
     environment:
       APP_ENV: production
       APP_DEBUG: 'false'
-      DB_HOST: dev.c32yqq0ay8pl.ap-southeast-1.rds.amazonaws.com
+      DB_HOST: 
       DB_PORT: '3306'
-      DB_DATABASE: dev
-      DB_USERNAME: devmaster
-      DB_PASSWORD: '1XZa2W1B3lGyka90sQLK'
+      DB_DATABASE: 
+      DB_USERNAME: 
+      DB_PASSWORD: ''
 
   web:
     image: nginx:alpine
