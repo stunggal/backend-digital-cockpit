@@ -21,5 +21,9 @@ Development
 Environment
 - Use `.env.docker` as a starting point for Docker deployment; copy to `.env` and set `APP_KEY` and other secrets before running in production.
 
+RDS / External DB
+- If you want the app to connect to an external RDS instance, set `DB_HOST`, `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` in your copied `.env` (or `.env.docker`) to point to the RDS endpoint. The included example `.env.docker` already contains the provided RDS values.
+- The `docker-compose.yml` in this repository has been adjusted to use an external RDS endpoint by default (the local `db` service was removed). If you prefer a local database for development, you can re-add a `db` service or run a standalone MySQL container and point `DB_HOST` at it.
+
 Security & production
 - For production, consider using a managed database, secure secrets (do not commit `.env`), TLS termination, and an optimized PHP image and caching layer. Also review file permissions and disable Xdebug.
