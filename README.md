@@ -2,9 +2,9 @@
 
 A minimal backend for the Digital Cockpit project — API-focused Laravel application.
 
-**Subtitle:** A lightweight Laravel API for patient monitoring and scheduling
+A lightweight Laravel API for patient monitoring and scheduling
 
-**Slogan:** "Make clinical data actionable — one API at a time."
+"Make clinical data actionable — one API at a time."
 
 **Last commit:** N/A (no local git info available). To update this locally run:
 
@@ -169,9 +169,3 @@ This project does not include an explicit license file. Add a `LICENSE` if
 you plan to open-source the repository. For questions contact the repo owner.
 
 ---
-
-If you'd like, I can also:
-
--   Insert the actual latest git commit into the `Last commit` field if you
-    allow me to run git locally, or you can run the command above and paste the result.
--   Generate a concise changelog of edits I made during previous sessions.
