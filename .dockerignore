@@ -1,9 +1,14 @@
-# Direktori yang TIDAK perlu disalin ke dalam container saat build
-node_modules/
-vendor/
-
-# File penting lainnya yang harus diabaikan saat build
+vendor
+node_modules
+storage/*.key
+storage/*.log
+storage/app/*
+storage/framework/*
+storage/logs/*
+.env
+.env.*
 .git
-.gitignore
-.env 
-.vscode/
+.github
+docker-compose.override.yml
+DOCKER.md
+/.vscode
