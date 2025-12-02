@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    # Nama service kita adalah 'app'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Nama kontainer yang akan muncul di Docker
+    container_name: laravel-backend
+    # Mapping port: port 80 kontainer akan diakses melalui port 7000 di laptop Anda
+    ports:
+      - "7000:80"
+    # Mapping volume: kode aplikasi di laptop Anda akan disinkronkan ke dalam kontainer.
+    # Ini sangat penting untuk development agar perubahan kode langsung terlihat.
+    volumes:
+      - .:/var/www/html
+    # Environment file untuk memuat variabel konfigurasi
+    env_file:
+      - .env
+    # Perintah untuk menjalankan kontainer (override default jika perlu, tapi kita pakai default)
+    # command: /usr/sbin/apache2ctl -D FOREGROUND
